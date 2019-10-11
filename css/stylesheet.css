@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Cormorant+Garamond:300,400|Playfair+Display+SC:400,700,900|Nothing+You+Could+Do|Sorts+Mill+Goudy&display=swap');
+
+html {
+  font-size: 62.5%; }
+
+body{
+    font-size: 1.8em;
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    color: #222;}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-family: 'Cinzel', serif; }
+
+h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;}
+
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0; }
+
+
+
+.header {
+    margin: 5rem 0;
+    text-align: center; }
+.header .logo {
+    width: 280px;
+    margin: 0 auto;
+    position: relative; }
+.header .logo a:link {
+    text-decoration: none;}
+.header .logo a:visited {
+    text-decoration: none;
+    color: black;}
+.header .logo a:hover {
+    color: #bb8c8c;}
+
+.header .logo h1 {
+    letter-spacing: 2.2rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #cacaca;
+    font-family: 'Playfair Display SC', serif; }
+.header .logo h6 {
+    letter-spacing: 1.19rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: -40px; }
+
+.nav {
+    width: 100%;
+    border-top: 1px solid #eee; }
+.nav ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center; }
+.nav ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 6.5rem; }
+.nav ul li a {
+    display: block;
+    padding: 0px 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: font-family: 'Cinzel', serif;
+    color: #222;}
+.nav ul li a:visited {
+    text-decoration: none;
+    color: black;}
+.nav ul li a:hover {
+    color: #bb8c8c;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+
+.sub-page {
+    padding: 40px 0;
+    border-top: 4px solid #333;
+    font-size: 25px; }
+
+.story {
+    border-top: 4px solid #333;
+    font-size:25px;
+    font-weight: 500;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+.article header figure {
+    display: block; }
+.article header figure figcaption {
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+    letter-spacing: 2px; }
+.article header h3{
+    padding: 40px 20px 0px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:550; }
+.article .info {
+    padding: 0px 20px;
+    text-align: center;
+    max-width: 80%;
+    display: block;
+    margin: auto auto;
+    clear: both; }
+.article footer {
+    padding: 60px 20px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.article img {
+  display: block;
+  width: 100%; }
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    }
+
+}
+.tags li {
+    float: left; }
+.tags li .tag {
+    background: #e1e1e1;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    color: #333;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 22px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;}
+
+table {
+    border-color: transparent;
+    border-collapse:collapse;
+    padding: 10px auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+table caption {
+    font-family:'Cinzel', serif;
+    margin:30px 0 50px 0;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: .2rem;
+}
+table th {
+    font-family:'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background-color: black;}
+
+table td a:link {
+    text-decoration: none;
+    color: black;}
+table td a:visited {
+    text-decoration: none;
+    color: black;}
+table td a:hover {
+    color: #fb8686;
+    border-color: #fb8686;}
+table .jp {
+    font-size: 15px;
+}
+
+table .name {
+    width:200px;
+}
+table img {
+    margin-top: 10px;
+    width: 80%;
+}
+table .year {
+    width:100px;
+}
+
+.form {
+    font-size: 15px;
+    display: block;
+    padding: 0px 20px;
+    text-align: center;
+    max-width: 80%;
+    margin: auto auto; }
+
+
+.form input[type="submit"] {
+    font-family: 'Cormorant Garamond', serif;
+    display: inline-block;
+    height: 20px;
+    padding: 0 10px;
+    color: #555555;
+    text-align: center;
+    font-size: 1px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #e1e1e1;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+    box-sizing: border-box; }
+
+footer {
+    border-top: 1px solid #f9f9f9;
+    background-color: #fcfcfc;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+     }
+
+.socials {
+    margin: 5px auto;
+    box-sizing: border-box;
+    max-width: 80%;
+    padding: 20px 20px 0 20px;
+}
+.socials ul {
+    list-style: none;
+    padding:0;}
+.socials li {
+    display: inline-block;
+    margin: 10px 20px 0 20px}
+.socials ul li img {
+    width: 2em; }
+}
+
+.photo {
+    margin: auto;
+    padding: 0.5vw;
+    font-size: 0;
+    display: flex; }
+
+.photo figure {
+    width: 500px;
+    margin: 0.5vw;
+    padding: 30px;
+    display: inline-block;
+}
+
+.photo figure img {
+    width: 100%;
+    height: auto; }
+
+.photo figure figcaption {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.vvideo {
+    text-align: center;
+    margin:50px auto;
+
+}
+
+.vvideo h1 {
+    margin:20px 0 50px 0;
+    font-weight:500;
+}
+.mainarticle{
+    margin:50px auto;
+    text-align: center;
+    display: block;
+}
+.mainarticle p {
+    max-width: 80%;
+    margin:50px auto;
+    font-style: italic;
+    font-size: 20px;
+}
+.mainarticle a{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 10px;
+}
+.mainarticle a:link{
+    text-decoration: none;
+}
+.mainarticle a:visited {
+    text-decoration: none;
+    color: black;
+}
+.mainarticle a:hover {
+    color: #fb8686;
+    border-color: #fb8686;
+}
+.mainarticle img {
+    width: 50%;
+
+}
+.pic {
+    width: 100%;
+    display: flex;
+    margin:0 auto;}
+.pic img {
+    width: 565px;
+    margin: 0.5vw;
+    display: inline-block;}
+.u {
+    margin:50px auto;
+    text-align: center;
+}
+.u p {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size:40px;
+    font-weight: 500;
+}
