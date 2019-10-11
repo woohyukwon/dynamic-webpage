@@ -331,7 +331,9 @@ footer {
     display: flex;
     margin:0 auto;}
 .pic img {
-    width: 565px;
+    width: 50%;
+    height:auto;
+    width: 50%; 
     margin: 0.5vw;
     display: inline-block;}
 .u {
