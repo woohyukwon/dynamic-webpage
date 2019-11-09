@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Podcasts</title>
      <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -35,31 +37,32 @@
             <hr/>
         </div>
 
+            <div class="table1">
             <table border="2">
                 <caption>Kotaro Isaka Book Recommendation</caption>
                     <tr>
-                        <th class="name">Kotaro Isaka</th>
-                        <th>Books</th>
-                        <th class="year">Year</th>
-                        <th colspan="2">Genre</th>
-                        <th>Adapted Film</th>
+                        <th class="name" id="fade">Kotaro Isaka</th>
+                        <th id="fade">Books</th>
+                        <th class="year" id="fade">Year</th>
+                        <th colspan="2" id="fade">Genre</th>
+                        <th id="fade">Adapted Film</th>
                     </tr>
                     <tr>
                         <td rowspan="5"><img src="img/yiban.jpg"></td>
-                        <td class="jp"><a href="https://book.douban.com/subject/5326849/">オーデュボンの祈り</a></td>
-                        <td>2000</td>
-                        <td>Mystery</td>
-                        <td>Crime</td>
-                        <td>None</td>
+                        <td class="jp" id="fade"><a href="https://book.douban.com/subject/5326849/">オーデュボンの祈り</a></td>
+                        <td id="fade">2000</td>
+                        <td id="fade">Mystery</td>
+                        <td id="fade">Crime</td>
+                        <td id="fade">None</td>
                     </tr>
                     <tr>
-                        <td><a href="https://book.douban.com/subject/5395724/">Lush Life</a></td>
-                        <td>2002</td>
-                        <td>Mystery</td>
-                        <td>Crime</td>
-                        <td><a href="http://asianwiki.com/Lush_Life">Lush Life (2009)</a></td>
+                        <td id="fade"><a href="https://book.douban.com/subject/5395724/">Lush Life</a></td>
+                        <td id="fade">2002</td>
+                        <td id="fade">Mystery</td>
+                        <td id="fade">Crime</td>
+                        <td id="fade"><a href="http://asianwiki.com/Lush_Life">Lush Life (2009)</a></td>
                     </tr>
-                    <tr>
+                    <tr id="bigrow">
                         <td class="jp"><a href="https://book.douban.com/subject/6041089/">アヒルと鴨のコインロッカー</a></td>
                         <td>2003</td>
                         <td>Mystery</td>
@@ -67,21 +70,24 @@
                         <td><a href="http://www.tsogen.co.jp/wadai/ahiru_eigaka.html">The Foreign Duck,<br>the Native Duck and God in a Coin Locker (2007)</a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://book.douban.com/subject/26864984/">Remote Control</a></td>
-                        <td>2007</td>
-                        <td>Mystery</td>
-                        <td>Crime</td>
-                        <td><a href="https://www.japansociety.org/event_detail?eid=9e76ad5"> Golden Slumbers (2010)</a></td>
+                        <td id="fade"><a href="https://book.douban.com/subject/26864984/">Remote Control</a></td>
+                        <td id="fade">2007</td>
+                        <td id="fade">Mystery</td>
+                        <td id="fade">Crime</td>
+                        <td id="fade"><a href="https://www.japansociety.org/event_detail?eid=9e76ad5"> Golden Slumbers (2010)</a></td>
 
                     </tr>
-                        <td><a href="https://book.douban.com/subject/20449827/">Bye Bye, Blackbird</a></td>
-                        <td>2010</td>
-                        <td>Mystery</td>
-                        <td>Love</td>
-                        <td>None</td>
+                        <td id="fade"><a href="https://book.douban.com/subject/20449827/">Bye Bye, Blackbird</a></td>
+                        <td id="fade">2010</td>
+                        <td id="fade">Mystery</td>
+                        <td id="fade">Love</td>
+                        <td id="fade">None</td>
 
                     </tr>
+
             </table>
+             <button id="showfav">Show My Favorite</button><button id="recall">Show the table</button>
+        </div>
 
         <footer>
                 <div class="socials">
@@ -94,6 +100,6 @@
                 </div>
         </footer>
         </section>
-
+<script src="js/JavaScript.js"></script>
 </body>
 </html>
