@@ -7,6 +7,9 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
 
 </head>
 <body>
@@ -37,15 +40,14 @@
     <section class="main container">
         <article class="article">
             <header>
-                <figure>
-                    <img src="img/liang.jpg" alt="photobyliang" />
+                <figure><a href="#about"><img id="show1" src="img/Liang.jpg" alt="photobyliang" /></a>
                     <figcaption>- <strong>Motion of Melody</strong> photo by Liang</figcaption>
                 </figure>
-                    <h3>About LIANG</h3>
+                    <h3 id="show2">About LIANG</h3>
             </header>
 
             <div class="info" id="about">
-                <p>Hi, I'm Liangyin Yu. <br>
+                <a href="#form"><p>Hi, I'm Liangyin Yu.<br>
                    This is my personal blog LIANG.<br>
                    I am now studying web programming,<br>
                    and this is the first website I am trying to create.<br>
@@ -53,18 +55,18 @@
                    Here may be some pictures, videos,<br>
                    Or some thoughts after reading an article, watching a film.<br>
                    I love everything that is creative, inspiring,<br>
-                   and of course, aesthetic.<br>
+                   and of course, aesthetic.
                    I'd really love to share ideas with you,<br>
                    So feel free to leave your voice here.<br>
 
-                </p>
+                </p></a>
             </div>
          </article>
 
          <div class="form">
                  <fieldset>
                         <legend>Leave Your Thoughts Here</legend>
-                            <form action="/formhandler.html" method="post" style="padding-top: 20px;">
+                            <form action="index.html" method="post" style="padding-top: 20px;">
                                 <label for="name">Nickname:</label>
                                 <input type="text" name="name">
                                 <label for="email" style="margin-left: 70px">Email:</label>
@@ -72,7 +74,7 @@
                                 <br>
                                 <textarea rows="10" cols="70" style= "max-width: 100%; background: transparent; margin:20px; border-style: ridge;" ></textarea>
                                 <br>
-                                <input type="submit" value="Submit" / id="bottom" >
+                                <button onclick="popup()">submit</button>
                             </form>
                 </fieldset>
          </div>
@@ -88,6 +90,10 @@
                 </div>
         </footer>
     </section>
+
+
+
+    <script src="js/JavaScript.js"></script>
 
 </body>
 </html>
