@@ -92,6 +92,10 @@ h6 {
     padding: 0 20px;
     box-sizing: border-box; }
 
+.sub-page {
+    padding: 40px 0;
+    border-top: 4px solid #333;
+    font-size: 25px; }
 
 .story {
     border-top: 4px solid #333;
@@ -121,12 +125,83 @@ h6 {
     display: block;
     margin: auto auto;
     clear: both; }
+.article footer {
+    padding: 60px 20px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
 
 .article img {
   display: block;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
 
+.article img:hover {
+  -webkit-filter: blur(3px);
+  -webkit-transition-property: -webkit-filter;
+  -webkit-transition-duration: .4s;
+  filter: blur(3px);
+  cursor: pointer; }
 
+.article h3 {
+    display: none;
+    cursor: pointer;
+}
+.info p {
+    display: none;
+    line-height: 45px;
+    text-align: center;
+    margin:0px 200px 30px 200px;
+    box-sizing: content-box;
+}
+.info a:link {
+    text-decoration: none;
+    color: #252b3e;
+}
+.info a:visited {
+    text-decoration: none;
+    color: #252b3e;
+}
+.info a:hover {
+    color: #95958c;
+    background-color: #cfd6db;
+    }
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    }
+
+}
+.tags li {
+    float: left; }
+.tags li .tag {
+    background: #e1e1e1;
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    color: #333;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 22px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;}
+
+.table1 {
+        text-align: center;
+        display: none;
+        width: 100%;
+}
 table {
     border-color: transparent;
     border-collapse:collapse;
@@ -172,7 +247,25 @@ table img {
 table .year {
     width:100px;
 }
-
+#showfav, #recall {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    height: 25px;
+    padding: 0 10px;
+    margin:30px 20px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    background-color: grey;
+    border-radius: 4px;
+    border: 1px solid grey;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#showfav:hover, #recall:hover {
+    background-color: black;
+}
 .form {
     font-size: 15px;
     display: block;
@@ -180,19 +273,19 @@ table .year {
     text-align: center;
     max-width: 80%;
     margin: auto auto; }
+.form fieldset {
+    display: none;
+}
 
-.form input[type="submit"] {
+
+.form button {
     font-family: 'Cormorant Garamond', serif;
-    display: inline-block;
     height: 20px;
     padding: 0 10px;
     color: #555555;
     text-align: center;
-    font-weight: 100;
     line-height: 20px;
-    letter-spacing: .1rem;
     text-transform: uppercase;
-    text-decoration: none;
     background-color: #e1e1e1;
     border-radius: 4px;
     border: 1px solid #e1e1e1;
@@ -221,53 +314,93 @@ footer {
     margin: 10px 20px 0 20px}
 .socials ul li img {
     width: 2em; }
-}
+
+.socials ul li img:hover {
+    opacity: 70%; }
 
 .photo {
-    margin: auto;
-    padding: 0.5vw;
-    font-size: 0;
-    display: flex; }
+    display: none;
+    width: 100%;
+    height: 550px;
+    overflow: scroll;
+    padding: 0.5vw;}
+.photo div {
+    width: 70%;
+    margin: 30px auto;
 
-.photo figure {
-    width: 500px;
-    margin: 0.5vw;
-    padding: 30px;
-    display: inline-block;
+
 }
 
-.photo figure img {
-    width: 100%;
-    height: auto; }
+.photo img {
+    max-width: 100%;
+    height: auto;
+    -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   transition: all 1s ease; }
 
-.photo figure figcaption {
+.photo img:hover {
+  -webkit-filter: blur(3px);
+  -webkit-transition-property: -webkit-filter;
+  -webkit-transition-duration: .4s;
+  filter: blur(3px);
+  cursor: pointer; }
+
+.photo figcaption {
     text-align: center;
     font-size: 18px;
     font-style: italic;
     margin-top: 5px;
     letter-spacing: 1px;
 }
-
+.story p {
+    cursor: pointer;
+}
+.story p:hover {
+    color: #8e8e90;
+}
+#big {
+    display: none;
+    height: 500px;
+    overflow: scroll;
+}
 .vvideo {
+    display: none;
     text-align: center;
     margin:50px auto;
 
 }
-
+.vvideo p {
+    margin:30px auto;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.vvideo p.active {
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
 .vvideo h1 {
     margin:20px 0 50px 0;
     font-weight:500;
 }
-.mainarticle{
+.mainarticle {
+    display: none;
     margin:50px auto;
     text-align: center;
-    display: block;
 }
 .mainarticle p {
     max-width: 80%;
     margin:50px auto;
     font-style: italic;
     font-size: 20px;
+}
+.mainarticle p.active {
+    color: white;
+    background-color: #111113;
+    cursor: text;
 }
 .mainarticle a{
     font-family: 'Sorts Mill Goudy', serif;
@@ -288,20 +421,76 @@ footer {
     width: 50%;
 
 }
+#klmain {
+    display: none;
+}
 .pic {
+    text-align: center;
+    display: none;
     width: 100%;
-    display: flex;
     margin:0 auto;}
-.pic img {
-    width: 565px;
-    margin: 0.5vw;
-    display: inline-block;}
+
+.pic #pic1 #pic2 {
+    width: 47%;
+    height:auto;
+    padding: 10px;
+    margin: auto;
+    }
+
+.pic #pic1:hover {
+  -webkit-filter: blur(3px);
+  -webkit-transition-property: -webkit-filter;
+  -webkit-transition-duration: .4s;
+  filter: blur(3px);
+  cursor: pointer; }
+
+
 .u {
+    display: none;
     margin:50px auto;
     text-align: center;
+}
+
+.u .player img {
+    width: 40px;
+    height: 40px;
+    padding: 0px 40px;
+    margin:auto;
+    cursor: pointer;
+}
+
+.u .player img:hover {
+    opacity: 70%;
+}
+.u audio {
+    display: none;
 }
 .u p {
     font-family: 'Nothing You Could Do', cursive;
     font-size:40px;
     font-weight: 500;
+}
+.u p:hover {
+    cursor: pointer;
+    color: #7f1817;
+}
+
+.mainly {
+    font-family: 'Nothing You Could Do', cursive;
+    margin:0px 150px 20px 150px;
+    padding: 0px 100px;
+    text-align: center;
+}
+.mainly img {
+    display: none;
+}
+.mainly p {
+    display: none;
+}
+.mainly p:first-letter {
+    font-size: xx-large;
+}
+.mainly p:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
 }
