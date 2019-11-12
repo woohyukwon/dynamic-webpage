@@ -26,6 +26,17 @@ h6 {
     line-height: 1.6;
     letter-spacing: 0; }
 
+.story #click {
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin:0px 490px;
+}
+.story #click.active {
+    background-color: #232526;
+    color: white;
+}
 
 
 .header {
@@ -150,11 +161,10 @@ h6 {
   cursor: pointer; }
 
 .article h3 {
-    display: none;
+
     cursor: pointer;
 }
 .info p {
-    display: none;
     line-height: 45px;
     text-align: center;
     margin:0px 200px 30px 200px;
@@ -256,7 +266,7 @@ table .year {
     color: white;
     text-align: center;
     line-height: 25px;
-    background-color: grey;
+    background-color: black;
     border-radius: 4px;
     border: 1px solid grey;
     text-transform: uppercase;
@@ -264,7 +274,7 @@ table .year {
     box-sizing: border-box;
 }
 #showfav:hover, #recall:hover {
-    background-color: black;
+    background-color: grey;
 }
 .form {
     font-size: 15px;
@@ -293,6 +303,7 @@ table .year {
     box-sizing: border-box; }
 
 footer {
+    margin-top: 30px;
     border-top: 1px solid #f9f9f9;
     background-color: #fcfcfc;
     text-align: center;
@@ -472,7 +483,7 @@ footer {
 }
 .u p:hover {
     cursor: pointer;
-    color: #7f1817;
+    color: #e74c3c;
 }
 
 .mainly {
