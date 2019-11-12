@@ -1,16 +1,39 @@
+$("li.about").click(function () {
+  $("div.info").show();
+});
+
 $("img#show1").click(function () {
-  $("p").slideUp(300).delay(1200).fadeIn(1200);
+  $("div.info").slideUp(300).delay(1200).fadeIn(1200);
   $("h3#show2").slideUp(300).fadeIn(1000);
 });
 
+$("div.info").hide();
+$("h3#show2").hide();
+
+
+$("[href$='form']").hover(function () {
+    $("fieldset").show(1000);
+    });
 
 $("[href$='form']").click(function () {
-  $("fieldset").show("slow");
+  $("fieldset").slideToggle().end();
 });
+
+$("p#pictext").hover(function () {
+    $("p#click").toggleClass("active").slideToggle();
+    $("p#click").show();
+  }
+);
 
 $("p#pictext").click(function () {
     $("div.photo").fadeIn(4000);
 });
+
+$("p#whois").hover(function () {
+    $("p#click").toggleClass("active").slideToggle();
+    $("p#click").show();
+  }
+);
 
 $("div.story").click(function () {
     $("div#big").slideDown(2000);
@@ -29,6 +52,12 @@ $("p#reada").hover(function () {
 $("p#mainart").hover(function () {
     $(this).toggleClass("active");});
 
+$("p#lit").hover(function () {
+    $("p#click").toggleClass("active").slideToggle();
+    $("p#click").show();
+  }
+);
+
  $("div.story").click(function () {
   $("div.table1").slideDown(2000);
 });
@@ -44,6 +73,12 @@ $("button#recall").click(function () {
     $("td#fade").fadeIn(1000);
     $("tr#bigrow").css({ "width":"","font-size":"","font-weight":"","background-color":""});
 });
+
+$("p#ken").hover(function () {
+    $("p#click").toggleClass("active").slideToggle();
+    $("p#click").show();
+  }
+);
 
 $("div.story").click(function () {
     $("div#klmain").fadeIn(2000);
